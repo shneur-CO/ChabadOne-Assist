@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){const extractUrlsAndTitl
                 <div class="article-dc-image" style="background-image: url('${article.Image}');"></div>
                 <div class="article-dc-title">${article.Title}</div>
                 <div class="article-dc-subtitle">${isValidDate(article.Date)?formatDate(article.Date):article.Date}</div>
-                <a class="read-more-dc" href="${article.Link}">Learn More</a>
+                <a class="read-more-dc" href="${article.Link}">View Gallery</a>
             </div>
         `).join('');};const generateLinksFromJSON=(json)=>{return json.map(item=>`
             <a href="${item.Link}">${item.Title}</a>
