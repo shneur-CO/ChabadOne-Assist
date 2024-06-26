@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    function addCustomCSS() {
+        var style = document.createElement('style');
+        document.head.appendChild(style);
+        style.sheet.insertRule('.item { display: none; }', 0);
+    }
+
+    addCustomCSS();
+
     const extractUrlsAndTitles = () => {
         const articleIndex = document.querySelector('.article_index');
         const links = articleIndex.querySelectorAll('a');
